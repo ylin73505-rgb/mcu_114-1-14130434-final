@@ -65,30 +65,36 @@ header {
         }
       }
     }
+  }
 
-    .right {
-      margin-left: auto;
-      z-index: 20;
+  .right {
+    margin-left: auto;
+    z-index: 20;
 
-      .button {
-        background: #f6f6f6;
-        padding: 0;
-        border-radius: 8px;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
+    .button {
+      background: #f6f6f6;
+      padding: 0;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
 
-        .button {
-          border: none;
-          padding: 0.7rem 0.7rem;
-          font-size: 0.95rem;
-          cursor: pointer;
-          color: #111;
+      > button {
+        border: none;
+        background: transparent;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.95rem;
+        cursor: pointer;
+        color: #111;
 
-          &:hover {
-            background-color: #00bca1;
-            color: white;
-          }
+        i {
+          margin-left: 0.4rem;
+        }
+
+        &:hover {
+          background-color: #00bca1;
+          color: white;
+          border-radius: 6px;
         }
       }
     }

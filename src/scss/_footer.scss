@@ -2,7 +2,6 @@ footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding: 2rem 0;
   text-align: center;
-  color: #6b7280;
   font-size: 0.95rem;
 
   .container > div {
@@ -18,7 +17,7 @@ footer {
     align-items: center;
 
     a {
-      color: #6b7280;
+      color: black;
       text-decoration: none;
       letter-spacing: 0.06em;
       transition: color 0.2s;
@@ -26,6 +25,29 @@ footer {
       &:hover {
         color: #00bca1;
         text-decoration: none;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.75rem;
+    justify-content: center;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #00bca1;
       }
     }
   }

@@ -16,7 +16,6 @@ header {
     font-weight: 700;
     line-height: 3.25rem;
     color: #00bca1;
-    font-family: "PingFang TC", "Noto Sans TC", sans-serif;
   }
 
   .container > div {
@@ -49,31 +48,47 @@ header {
         position: relative;
         padding: 0.25rem 0;
       }
+
+      .active {
+        position: relative;
+        color: #00bca1;
+
+        &::after {
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: #00bca1;
+          border-radius: 50%;
+          position: absolute;
+          left: calc(50% - 2.5px);
+          bottom: -8px;
+        }
+      }
     }
-  }
 
-  .right {
-    margin-left: auto;
-    z-index: 20;
-
-    .button {
-      background: #f6f6f6;
-      padding: 0;
-      border-radius: 8px;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
+    .right {
+      margin-left: auto;
+      z-index: 20;
 
       .button {
-        border: none;
-        padding: 0.7rem 0.7rem;
-        font-size: 0.95rem;
-        cursor: pointer;
-        color: #111;
+        background: #f6f6f6;
+        padding: 0;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
 
-        &:hover {
-          background-color: #00bca1;
-          color: white;
+        .button {
+          border: none;
+          padding: 0.7rem 0.7rem;
+          font-size: 0.95rem;
+          cursor: pointer;
+          color: #111;
+
+          &:hover {
+            background-color: #00bca1;
+            color: white;
+          }
         }
       }
     }

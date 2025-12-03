@@ -1,9 +1,14 @@
 @use "./main";
 @use "./header";
 @use "./footer";
+@use "./home";
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }

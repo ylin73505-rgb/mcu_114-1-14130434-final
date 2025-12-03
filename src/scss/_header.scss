@@ -19,7 +19,6 @@ header {
     font-family: "PingFang TC", "Noto Sans TC", sans-serif;
   }
 
-  /* Row that holds left / middle / right */
   .container > div {
     display: flex;
     align-items: center;
@@ -27,12 +26,10 @@ header {
     padding: 0.5rem 0;
   }
 
-  /* 左側：site title */
   .left {
     z-index: 20;
   }
 
-  /* 中間：置中導覽（用絕對置中以避免被左右寬度推移） */
   .middle {
     position: absolute;
     left: 50%;
@@ -55,7 +52,6 @@ header {
     }
   }
 
-  /* 右側：下載按鈕 */
   .right {
     margin-left: auto;
     z-index: 20;
@@ -67,23 +63,20 @@ header {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-    }
 
-    .btn {
-      background: transparent;
-      border: none;
-      padding: 0;
-      font-size: 0.95rem;
-      cursor: pointer;
-      color: #111;
-    }
+      .button {
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-size: 0.95rem;
+        cursor: pointer;
+        color: #111;
+      }
 
-    /* 簡單的檔案圖示（fallback 為 emoji） */
-    .btn::after {
-      content: "📄";
-      display: inline-block;
-      font-size: 0.95rem;
-      margin-left: 0.3rem;
+      &:hover {
+        background-color: #00bca1;
+        color: white;
+      }
     }
   }
 }

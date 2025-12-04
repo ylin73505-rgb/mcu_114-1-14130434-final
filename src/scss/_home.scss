@@ -4,14 +4,14 @@ div.home {
 
   > div {
     width: 50%;
+    gap: 1.5rem;
 
     &.text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-left: 2rem;
-      padding-right: 1rem;
+      padding-left: 6rem;
 
       > span {
         align-self: flex-start;
@@ -23,9 +23,9 @@ div.home {
         border-radius: 5px;
       }
 
-      h3 {
+      h1 {
         margin: 0;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
         line-height: 3rem;
       }
@@ -41,6 +41,26 @@ div.home {
         &.button {
           display: flex;
           gap: 1.25rem;
+
+          .btn {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.25rem;
+            padding: 0.75rem 1.25rem;
+            background-color: #00bca1;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #028e79;
+            }
+
+            > i {
+              margin-left: 10px;
+            }
+          }
 
           button {
             font-size: 1rem;
@@ -77,6 +97,10 @@ div.home {
             border-radius: 50%;
             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
             cursor: pointer;
+
+            &:hover {
+              color: #00bca1;
+            }
           }
         }
       }
@@ -88,7 +112,7 @@ div.home {
       align-items: center;
 
       img {
-        width: 400px;
+        width: 65%;
       }
     }
   }

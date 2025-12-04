@@ -1,5 +1,6 @@
 header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -79,7 +80,7 @@ header {
       align-items: center;
       gap: 0.5rem;
 
-      > button {
+      > .btn {
         border: none;
         background: transparent;
         padding: 0.7rem 0.9rem;

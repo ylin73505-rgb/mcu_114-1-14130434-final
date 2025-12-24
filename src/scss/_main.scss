@@ -25,24 +25,32 @@ section {
     padding-right: 1.5rem;
 
     > div {
-      padding-top: 5rem;
+      padding-top: 4rem;
+
       &.home {
-        min-height: 500px;
+        min-height: 700px;
       }
 
       &.page {
-        outline: solid 1px red;
-        min-height: 500px;
+        min-height: 700px;
+
+        div {
+          &.title {
+            margin-top: 1.5rem;
+            margin-bottom: 6rem;
+            text-align: center;
+          }
+        }
       }
     }
   }
-}
 
-a {
-  color: #333333;
-  text-decoration: inherit;
+  a {
+    color: #333333;
+    text-decoration: inherit;
 
-  &:hover {
-    color: #00bca1;
+    &:hover {
+      color: #00bca1;
+    }
   }
 }

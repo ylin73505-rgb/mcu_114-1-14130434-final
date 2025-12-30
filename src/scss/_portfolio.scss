@@ -22,13 +22,13 @@
   }
 
   .portfolio-cards {
-    width: 100%;
+    width: 84%;
     max-width: 1200px;
     padding: 0 3rem;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: var(--portfolio-grid-columns);
+    gap: var(--portfolio-gap);
   }
 
   .portfolio-card {

@@ -10,14 +10,16 @@ div {
 
   &.skills {
     display: flex;
-    gap: 4rem;
+    flex-direction: row;
+    gap: var(--skills-gap);
     padding: 0 3rem;
-    width: 100%;
+    width: 80%;
     max-width: 1200px;
 
     .left,
     .right {
-      width: 50%;
+      width: var(--skills-width);
+
       display: flex;
       flex-direction: column;
       gap: 2rem;

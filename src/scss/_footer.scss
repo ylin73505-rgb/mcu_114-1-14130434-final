@@ -14,7 +14,8 @@ footer {
 
   nav {
     display: flex;
-    gap: 3rem;
+    flex-direction: row;
+    gap: var(--footer-nav-gap);
     align-items: center;
 
     a {

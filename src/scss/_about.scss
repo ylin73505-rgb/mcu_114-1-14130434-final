@@ -1,15 +1,17 @@
 .page {
   .content {
     display: flex;
-    justify-content: space-between;
+    align-items: var(--about-align-items);
+    flex-direction: var(--about-flex-direction);
+    justify-content: var(--about-flex-justify-content);
     gap: 4rem;
-    padding-inline: 4rem; // ⭐ 左右留空隙（重點）
   }
 
   .introduce {
-    flex: 1;
+    flex: 0 0 var(--introduce-width);
 
     .card {
+      margin-left: var(--introduce-card-margin-left);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -41,7 +43,7 @@
     flex-direction: column;
     padding-block: 30px 70px;
     padding-inline: 20px;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
 
     h3 {
@@ -53,7 +55,7 @@
 
     .resume-item {
       display: flex;
-      justify-content: space-between;
+      justify-content: var(--about-flex-justify-content);
       align-items: center;
       margin-bottom: 1.5rem;
       position: relative;

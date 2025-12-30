@@ -6,8 +6,8 @@ section {
       max-width: 90vw;
       margin: 0px auto;
 
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding-left: var(--container-padding-left);
+      padding-right: var(--container-padding-right);
 
       > div {
         width: 100%;
@@ -21,8 +21,8 @@ section {
   main.wrapper {
     max-width: 90vw;
     margin: 0 auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: var(--container-padding-left);
+    padding-right: var(--container-padding-right);
 
     > div {
       padding-top: 4rem;

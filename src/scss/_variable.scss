@@ -1,0 +1,79 @@
+:root {
+  --container-padding-left: 1.5rem;
+  --container-padding-right: 1.5rem;
+
+  --nav-display: flex;
+  --nav-gap: 2.5rem;
+  --button-display: block;
+
+  --home-flex-direction: row;
+  --home-flex-justify-content: center;
+  --home-text-align-items: flex-start;
+  --home-text-padding-left: 6rem;
+  --home-width: 50%;
+  --home-heading-font-size: 3rem;
+  --home-image-width: 350px;
+  --home-min-height: 60vh;
+
+  --about-flex-justify-content: space-between;
+  --about-align-items: stretch;
+  --about-flex-direction: row;
+  --introduce-width: 50%;
+  --introduce-card-margin-left: 4rem;
+
+  --skills-gap: 4rem;
+  --skills-width: 50%;
+
+  --portfolio-grid-columns: repeat(3, 1fr);
+  --portfolio-gap: 2.5rem;
+
+  --footer-nav-flex-direction: row;
+  --footer-nav-gap: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --home-heading-font-size: 1.5rem;
+    --home-image-width: 250px;
+    --home-text-padding-left: 0rem;
+    --home-min-height: 100vh;
+
+    --about-flex-justify-content: center;
+    --about-align-items: center;
+    --introduce-width: 50%;
+    --introduce-card-margin-left: 0rem;
+
+    --skills-gap: 3rem;
+    --skills-width: 100%;
+
+    --portfolio-grid-columns: repeat(2, 1fr);
+    --portfolio-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --container-padding-left: 1.5rem;
+    --container-padding-right: 1.5rem;
+    --home-min-height: 60vh;
+
+    --nav-display: none;
+    --button-display: none;
+    --button-display: none;
+
+    --home-flex-direction: column-reverse;
+    --home-flex-justify-content: center;
+    --home-text-align-items: left;
+    --home-width: 100%;
+    --home-gap: 1.5rem;
+    --home-image-width: 240px;
+
+    --introduce-width: 100%;
+    --about-flex-direction: column;
+    --skills-width: 100%;
+
+    --portfolio-grid-columns: 1fr;
+
+    --footer-nav-gap: 1rem;
+  }
+}

@@ -1,17 +1,19 @@
 div.home {
   display: flex;
-  justify-content: space-between;
+  flex-direction: var(--home-flex-direction);
+  justify-content: var(--home-flex-justify-content);
 
   > div {
-    width: 50%;
+    width: var(--home-width);
     gap: 1.5rem;
 
     &.text {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding-left: 6rem;
+      align-items: var(--home-text-align-items);
+      padding-left: var(--home-text-padding-left);
+      min-height: var(--home-min-height);
 
       > span {
         align-self: flex-start;
@@ -25,7 +27,7 @@ div.home {
 
       h1 {
         margin: 0;
-        font-size: 3rem;
+        font-size: 48px;
         font-weight: 700;
         line-height: 3rem;
       }
@@ -90,7 +92,9 @@ div.home {
 
           .icon {
             display: flex;
-            justify-content: center;
+            flex-direction: var(--home-flex-direction);
+            justify-content: var(--home-flex-justify-content);
+            gap: var(--home-gap);
             align-items: center;
             width: 40px;
             height: 40px;
@@ -108,11 +112,16 @@ div.home {
 
     &.image {
       display: flex;
-      justify-content: center;
+      flex-direction: var(--home-flex-direction);
+      justify-content: var(--home-flex-justify-content);
+      gap: var(--home-gap);
       align-items: center;
+      justify-content: center;
 
       img {
-        width: 65%;
+        width: var(--home-image-width);
+        max-width: 100%;
+        height: auto;
       }
     }
   }
